@@ -87,7 +87,7 @@ return arr;
 // Play the song at 200 beats per minute.
 
 // "E E E E E E E G C D E"
-let notesString = window.prompt("Gimme a String please").toUpperCase();
+let notesString = window.prompt("Gimme a String please");
 // console.log(parseSong(notesString));
 let notes = parseSong(notesString);
 
@@ -101,7 +101,7 @@ let notes = parseSong(notesString);
 const onComplete = function () {
    console.log('Song finished playing');
    document.write('Awesome Song Dude');
-   notesString = window.prompt("Gimme another String please").toUpperCase();
+   notesString = window.prompt("Gimme another String please");
    playSong(parseSong(notesString), 200, onComplete);
 }
 // playSong(song, bpm, onComplete);
